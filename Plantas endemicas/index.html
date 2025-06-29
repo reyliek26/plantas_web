@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantas Endémicas de Yucatán</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            background-color: #e0f7fa;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        header {
+            background-color: #2e7d32;
+            color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .intro-text {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+            color: #555;
+            text-align: justify;
+        }
+
+        .plant-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .plant-list li {
+            background-color: #e8f5e9;
+            border-radius: 5px;
+            padding: 10px 15px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .plant-list li:hover {
+            background-color: #c8e6c9;
+        }
+
+        .plant-list a {
+            text-decoration: none;
+            color: #1b5e20;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .plant-list a:hover {
+            color: #004d40;
+        }
+
+        .plant-section {
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+
+        .plant-section h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2em;
+            color: #2e7d32;
+            margin-bottom: 15px;
+        }
+
+        .plant-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 15px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .plant-section img:hover {
+            transform: scale(1.02);
+        }
+
+        .plant-description {
+            font-size: 1em;
+            color: #444;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .divider {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+            margin: 40px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Plantas Endémicas de Yucatán</h1>
+        </header>
+
+        <p class="intro-text">
+            En Yucatán, algunas plantas endémicas incluyen el balché, el jabín, el kitanché y el makulis.
+            También hay varias especies de orquídeas endémicas, como la Epidendrum martinii.
+            El Gobierno del Estado de Yucatán enumera varias plantas, incluyendo la caoba, el cedro, la ceiba y el zapote.
+        </p>
+
+        <hr class="divider">
+
+        <h2>5 plantas destacadas de Yucatán</h2>
+        <ul class="plant-list">
+            <li><a href="#Balche">Balché</a></li>
+            <li><a href="#Chaka">Chaká</a></li>
+            <li><a href="#Jabin">Jabín</a></li>
+            <li><a href="#Pich">Pich</a></li>
+            <li><a href="#Makuilis-rosa">Makulis Rosa</a></li>
+        </ul>
+
+        <hr class="divider">
+
+        <section id="Balche" class="plant-section">
+            <h2>Balché</h2>
+            <img src="../img/Balche.jpg" alt="Imagen de Balché">
+            <p class="plant-description">
+                El "balché" se refiere a una bebida alcohólica tradicional mexicana, particularmente
+                de la cultura maya de la península de Yucatán, así como a un árbol del
+                que se obtiene la corteza para preparar esta bebida.
+            </p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="Chaka" class="plant-section">
+            <h2>Chaká</h2>
+            <img src="../img/Chaka.jpg" alt="Imagen de Chaká">
+            <p class="plant-description">
+                Árbol de hasta 15 mts. de altura, con el tronco recto, escamoso y muy ramificado en la copa;
+                las flores son pequeñas de color crema-verdoso muy aromática, florea de febrero a mayo;
+                los frutos son cápsulas drupáceas de 1 a 1.5 cm., es una especie caducifolia.
+            </p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="Jabin" class="plant-section">
+            <h2>Jabín</h2>
+            <img src="../img/Jabin.jpg" alt="Imagen de Jabín">
+            <p class="plant-description">
+                El árbol de jabín (Piscidia piscipula) tiene múltiples propiedades y usos. Sus hojas, corteza y raíces han sido utilizadas
+                en medicina tradicional para tratar diversos problemas de salud.
+                Además, la madera del jabín es apreciada por su calidad y resistencia, siendo utilizada en la construcción y fabricación de muebles.
+            </p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="Pich" class="plant-section">
+            <h2>Pich</h2>
+            <img src="../img/Pich.jpg" alt="Imagen de Pich">
+            <p class="plant-description">
+                No es una planta endémica en el sentido de que sea única a un solo lugar en el mundo.
+                Se trata de una especie nativa de América, específicamente de regiones tropicales y cálidas.
+                Su nombre común varía en diferentes regiones, como "guanacaste", "parota", "huanacaxtle" o "oreja de elefante".
+            </p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="Makuilis-rosa" class="plant-section">
+            <h2>Makulis Rosa</h2>
+            <img src="../img/makulis.jpg" alt="Imagen de Makulis Rosa">
+            <p class="plant-description">
+                Es un árbol nativo de México y otras partes de América Central y Sudamérica, y no es una especie endémica de Yucatán.
+                Es un árbol de hasta 15 metros de altura con tronco recto y copa piramidal, famoso por sus vistosas flores rosadas.
+            </p>
+        </section>
+
+        <footer>
+            <h3>Derechos Reservados &copy; Reyli Ek, Alba Chan, Naydeli Garrido 2025</h3>
+        </footer>
+    </div>
+</body>
+</html>

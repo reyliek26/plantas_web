@@ -1,0 +1,204 @@
+/* Fondo general con patrón */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('img/fondo-notas.png'); /* fondo decorativo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Contenedor principal */
+.fondo {
+    width: 80%;
+    max-width: 900px;
+    max-height: 95vh; /* máximo alto, pero no fijo */
+    background: linear-gradient(to bottom right, #f3e5f5, #e1bee7);
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    overflow-y: auto; /* scroll interno si el contenido es más alto */
+    display: flex;
+    flex-direction: column;
+    /* puedes agregar padding para que no choque con bordes si quieres */
+    padding: 5px;
+}
+
+/* Encabezado */
+header {
+    background-color: #6a1b9a;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+/* Contenido principal */
+.contenedor {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Menú lateral */
+.menu {
+    width: 26%;
+    background-color: #ede7f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+}
+
+.menu a {
+    width: 90%;
+    background-color: #4a148c;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 0.95em;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.menu a:hover {
+    background-color: #7b1fa2;
+    transform: translateY(-2px);
+}
+
+/* Imagen del concierto */
+.contenido {
+    width: 100%;
+    background-color: #ce93d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido img {
+    width: 70%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Publicidad */
+.publicidad {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #dcc0e0;
+    padding: 8px;
+    gap: 8px;
+}
+
+.publicidad img {
+    width: 100px;
+    border-radius: 8px;
+    border: 2px solid #ba68c8;
+    background: white;
+    padding: 3px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Pie de página */
+footer {
+    background-color: #6a1b9a;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 0.85em;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+footer .redes {
+    margin-top: 8px;
+}
+
+footer .redes img {
+    width: 25px;
+    margin: 0 6px;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+
+footer .redes img:hover {
+    transform: scale(1.2);
+}
+
+.contenido {
+    display: flex;
+    width: 70%;
+    background-color: #ce93d8;
+    padding: 10px;
+    gap: 10px;
+}
+
+/* Imagen y audio en una columna */
+.bloque-cancion {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-cancion {
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.audio-cancion {
+    width: 100%;
+}
+
+/* Contenedor para la letra */
+.letra-contenedor {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #f8bbd0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+}
+
+/* Letra */
+.letra-scroll {
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 0.9em;
+    flex-grow: 1;
+}
+
+/* Botón regresar */
+.btn-regresar {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: flex-end;
+    transition: background 0.3s ease;
+}
+
+.btn-regresar:hover {
+    background-color: #8e24aa;
+}
